@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02C27037-6DEE-4816-BE62-F5153D4B5BE6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Webix.Trial</RootNamespace>
+    <AssemblyName>Webix.Trial</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\libs\less\less.js" />
+    <Content Include="app\libs\less\less.min.js" />
+    <Content Include="app\libs\polyglot\polyglot.js" />
+    <Content Include="app\libs\polyglot\polyglot.min.js" />
+    <Content Include="app\libs\requirejs\require.js" />
+    <Content Include="app\libs\requirejs\require.min.js" />
+    <Content Include="app\libs\requirejs\text.js" />
+    <Content Include="app\libs\routie\routie.js" />
+    <Content Include="app\libs\routie\routie.min.js" />
+    <Content Include="app\libs\webix-jet\core.js" />
+    <Content Include="app\libs\webix-jet\helpers\crud.js" />
+    <Content Include="app\libs\webix-jet\helpers\status.js" />
+    <Content Include="app\libs\webix-jet\plugins\locale.js" />
+    <Content Include="app\libs\webix-jet\plugins\menu.js" />
+    <Content Include="app\libs\webix-jet\plugins\theme.js" />
+    <Content Include="app\libs\webix\codebase\fonts\font-license.txt" />
+    <Content Include="app\libs\webix\codebase\fonts\fontawesome-webfont.svg" />
+    <Content Include="app\libs\webix\codebase\i18n\be.js" />
+    <Content Include="app\libs\webix\codebase\i18n\de.js" />
+    <Content Include="app\libs\webix\codebase\i18n\en.js" />
+    <Content Include="app\libs\webix\codebase\i18n\es.js" />
+    <Content Include="app\libs\webix\codebase\i18n\fr.js" />
+    <Content Include="app\libs\webix\codebase\i18n\it.js" />
+    <Content Include="app\libs\webix\codebase\i18n\ja.js" />
+    <Content Include="app\libs\webix\codebase\i18n\pt.js" />
+    <Content Include="app\libs\webix\codebase\i18n\ru.js" />
+    <Content Include="app\libs\webix\codebase\i18n\zh.js" />
+    <Content Include="app\libs\webix\codebase\legacy\excanvas\AUTHORS.txt" />
+    <Content Include="app\libs\webix\codebase\legacy\excanvas\COPYING.txt" />
+    <Content Include="app\libs\webix\codebase\legacy\excanvas\excanvas.js" />
+    <Content Include="app\libs\webix\codebase\legacy\excanvas\README.txt" />
+    <Content Include="app\libs\webix\codebase\legacy\swfobject.js" />
+    <Content Include="app\libs\webix\codebase\legacy\uploader.swf" />
+    <Content Include="app\libs\webix\codebase\skins\air.css" />
+    <Content Include="app\libs\webix\codebase\skins\aircompact.css" />
+    <Content Include="app\libs\webix\codebase\skins\clouds.css" />
+    <Content Include="app\libs\webix\codebase\skins\compact.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\air.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\aircompact.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\clouds.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\compact.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\flat.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\glamour.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\light.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\metro.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\terrace.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\touch.css" />
+    <Content Include="app\libs\webix\codebase\skins\debug\web.css" />
+    <Content Include="app\libs\webix\codebase\skins\flat.css" />
+    <Content Include="app\libs\webix\codebase\skins\glamour.css" />
+    <Content Include="app\libs\webix\codebase\skins\light.css" />
+    <Content Include="app\libs\webix\codebase\skins\metro.css" />
+    <Content Include="app\libs\webix\codebase\skins\terrace.css" />
+    <Content Include="app\libs\webix\codebase\skins\touch.css" />
+    <Content Include="app\libs\webix\codebase\skins\web.css" />
+    <Content Include="app\libs\webix\codebase\webix.css" />
+    <Content Include="app\libs\webix\codebase\webix.min.js" />
+    <Content Include="app\libs\webix\codebase\webix.js" />
+    <Content Include="app\locales\zh.js" />
+    <Content Include="app\locales\en.js" />
+    <Content Include="app\app.js" />
+    <Content Include="app\assets\app.css" />
+    <Content Include="app\views\fund\create.js" />
+    <Content Include="app\views\fund\detail.js" />
+    <Content Include="app\views\fund\edit.js" />
+    <Content Include="app\views\fund\index.js" />
+    <Content Include="app\views\stock\create.js" />
+    <Content Include="app\views\stock\detail.js" />
+    <Content Include="app\views\stock\edit.js" />
+    <Content Include="app\views\stock\index.js" />
+    <Content Include="Global.asax" />
+    <Content Include="index.html" />
+    <Content Include="app\libs\almond\almond.js" />
+    <Content Include="app\views\main.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\StocksController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Stock.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\libs\almond\README.md" />
+    <Content Include="app\libs\polyglot\README.md" />
+    <Content Include="app\libs\requirejs\README.md" />
+    <Content Include="app\libs\routie\README.md" />
+    <Content Include="app\libs\webix-jet\README.md" />
+    <Content Include="app\libs\webix\README.md" />
+    <Content Include="packages.config" />
+    <Content Include="app\libs\less\README.md" />
+    <Content Include="app\libs\webix\codebase\fonts\fontawesome-webfont.eot" />
+    <Content Include="app\libs\webix\codebase\fonts\fontawesome-webfont.ttf" />
+    <Content Include="app\libs\webix\codebase\fonts\fontawesome-webfont.woff" />
+    <Content Include="app\libs\webix\codebase\fonts\PTS-bold.woff" />
+    <Content Include="app\libs\webix\codebase\fonts\PTS-webfont.woff" />
+    <Content Include="app\libs\webix\codebase\webix.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\views\plugins\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11622</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:10131/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
